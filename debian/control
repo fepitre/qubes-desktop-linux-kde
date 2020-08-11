@@ -1,0 +1,27 @@
+Source: kde-settings-qubes
+Section: xfce
+Priority: extra
+Maintainer: Frédéric Pierret (fepitre) <frederic.pierret@qubes-os.org>
+Build-Depends:
+  debhelper (>= 10~),
+  config-package-dev
+Standards-Version: 4.3.0
+Homepage: http://www.qubes-os.org
+
+Package: kde-settings-qubes
+Section: kde
+Architecture: amd64
+Depends: kde-standard, ${shlibs:Depends}, ${misc:Depends}
+Provides: ${diverted-files}
+Conflicts: ${diverted-files}
+Description: Package for installing all KDE components and settings needed for Qubes GuiVM.
+  Package for installing all KDE components and settings needed for Qubes GuiVM.
+
+Package: plasma-breeze-qubes
+Section: kde
+Architecture: amd64
+Depends: breeze-gtk-theme, ${shlibs:Depends}, ${misc:Depends}
+Provides: ${diverted-files}
+Conflicts: ${diverted-files}
+Description: Qubes colorful frames for Breeze plasma theme.
+  Qubes colorful frames for Breeze plasma theme.
