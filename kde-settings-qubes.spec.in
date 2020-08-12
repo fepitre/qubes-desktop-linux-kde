@@ -26,11 +26,11 @@ Requires: sddm
 Requires: sddm-breeze
 
 # Drop previous Qubes packages
+%if ! 0%{?rhel}
 Requires: kde-baseapps > 16.08.3
 Conflicts: kde-baseapps = 2000:16.08.3
 Obsoletes: qubes-kde-Dom0 <= 5.12.3
-
-# other 3rd party packages that are useful in Dom0
+%endif
 
 # The konsole really looks awful without those fonts:
 Requires: dejavu-sans-mono-fonts
@@ -51,7 +51,7 @@ Source0: %{name}-%{version}.tar.gz
 Summary: Qubes colorful frames for Breeze plasma theme
 Requires: plasma-breeze
 %if 0%{?fedora} >=32 || 0%{?rhel} >= 8
-Requires: python3-pyxdg
+Requires: python%{python3_pkgversion}-pyxdg
 %else
 Requires: pyxdg
 %endif
