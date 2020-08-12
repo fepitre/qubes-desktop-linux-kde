@@ -14,8 +14,8 @@ Architecture: amd64
 Depends: kde-standard, ${shlibs:Depends}, ${misc:Depends}
 Provides: ${diverted-files}
 Conflicts: ${diverted-files}
-Description: Package for installing all KDE components and settings needed for Qubes GuiVM.
-  Package for installing all KDE components and settings needed for Qubes GuiVM.
+Description: Default KDE settings for Qubes.
+  Default KDE settings for Qubes.
 
 Package: plasma-breeze-qubes
 Section: kde

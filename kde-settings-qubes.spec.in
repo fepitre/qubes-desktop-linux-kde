@@ -1,5 +1,5 @@
 Name:    kde-settings-qubes
-Summary: Package for installing all KDE components and settings needed for Qubes GuiVM
+Summary: Default KDE settings for Qubes
 Version: @VERSION@
 Release: @REL@%{?dist}
 
@@ -10,16 +10,9 @@ BuildArch: noarch
 
 Requires: qubes-desktop-linux-common
 Requires: qubes-artwork
-Requires: kde-filesystem
-Requires: kde-runtime
-Requires: kde-runtime-flags
-Requires: kde-runtime-libs
-Requires: kde-settings
-Requires: kdelibs
-Requires: kscreen
-Requires: ksysguardd
-Requires: oxygen-cursor-themes
-Requires: oxygen-icon-theme
+Requires: breeze-cursor-themes
+Requires: breeze-icon-theme
+Requires: plasma-desktop
 Requires: plasma-workspace
 Requires: plasma-workspace-libs
 Requires: sddm
